@@ -1,0 +1,9 @@
+<h1>Iron Maiden</h1>
+
+<p>This is a complete list of all <%= @albums.count %> albums released by the band Iron Maiden, for your viewing pleasure!:</p>
+
+<ul>
+<% @albums.each do |album| %>
+  <li><%= album.title %></li>
+<% end %>  
+</ul>
